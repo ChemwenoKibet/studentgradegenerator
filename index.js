@@ -1,8 +1,9 @@
+// Code for student grade generator
 const prompt = require("prompt-sync")();
-let average = prompt("Enter Average: ")
-let grade;
+let average = prompt("Enter Average: ") //Asks the user to input average score
+let grade; // declares grade
 
-if (average<=100 && average>=79){ 
+if (average<=100 && average>=79){ // beginning of if...else statement
 grade = "A";
 }else if (average<=79 && average>=60){
 grade = "B";
@@ -12,7 +13,7 @@ grade = "C";
 grade = "D";
 }else if (average<=40 && average>=0){
 grade = "E";
-}else if(average >100 || average < 0 ){
+}else if(average >100 || average < 0 ){ // incase a value outside the range is given as input
 grade = "Invalid Input";
 }
 console.log(grade);
